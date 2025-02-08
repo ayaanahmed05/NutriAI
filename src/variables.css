@@ -1,0 +1,17 @@
+:root {
+    /* Color Palette */
+    --primary-color: #2ecc71; /* Main Green */
+    --secondary-color: #27ae60; /* Darker Green */
+    --background-color: #ffffff; /* White */
+    --text-color: #333333; /* Dark Gray for readability */
+    --border-color: #d1d1d1; /* Light Gray */
+    --button-hover: #1e8449; /* Darker Green on Hover */
+  
+    /* Typography */
+    --font-family: "Arial", sans-serif;
+    --font-size-base: 16px;
+    --font-weight-bold: 600;
+
+    /* Lengths */
+    --header-height: 70px;
+  }

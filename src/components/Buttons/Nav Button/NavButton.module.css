@@ -1,0 +1,22 @@
+.navButton {
+    background-color: transparent;
+    font-family: var(--font-family);
+    font-size: 1.25rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--text-color); /* Use text color for better visibility */
+    letter-spacing: 2%;
+
+    border-style: none;
+    cursor: pointer;
+}
+
+.navButton:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--primary-color);
+    text-decoration-thickness: 3px;
+    opacity: 0.9;
+}
+
+.navButton:active {
+    opacity: 0.75;
+}

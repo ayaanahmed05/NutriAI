@@ -1,0 +1,58 @@
+.background {
+    background: var(--background-color);
+
+    width: 100vw;
+    height: calc(100vh - var(--header-height));
+
+    color: var(--text-color);
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contentContainer {
+    width: 40vw;
+
+    margin-left: 8vw;
+}
+
+.contentContainer h1 {
+    font-family: var(--font-family);
+    font-size: 3rem;
+    font-weight: var(--font-weight-bold);
+    letter-spacing: -1%;
+    line-height: 110%;
+
+    margin: 0 0 1.5rem 0;
+}
+
+.contentContainer p {
+    font-family: var(--font-family);
+    font-size: 1.25rem;
+    line-height: 140%;
+    color: var(--text-color);
+
+    margin: 0 0 3rem 0;
+}
+
+.buttonContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 2rem;
+}
+
+.illustration {
+    margin-right: 25vw;
+    transform: scale(10);
+    transform-origin: center;
+    filter: drop-shadow(0 0 1.5rem rgba(0, 0, 0, 0.1));
+}
+
+.illustration img {
+    max-width: 100%;
+    height: auto;
+}

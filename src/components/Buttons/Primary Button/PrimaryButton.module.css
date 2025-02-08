@@ -1,0 +1,24 @@
+.primaryButton {
+    background-color: var(--primary-color);
+    
+    font-family: var(--font-family); /* Updated to use global font */
+    font-size: var(--font-size-base); /* Use global font size */
+    font-weight: var(--font-weight-bold); /* Use global font weight */
+    color: var(--background-color); /* Ensures text is readable on green */
+
+    border-style: none;
+    border-radius: 8px; /* Assuming a default rounded button */
+
+    padding: 0.875rem 2rem;
+
+    cursor: pointer;
+    transition: background-color 0.15s;
+}
+
+.primaryButton:hover {
+    background-color: var(--secondary-color); /* Uses secondary green shade */
+}
+
+.primaryButton:active {
+    opacity: 0.75;
+}

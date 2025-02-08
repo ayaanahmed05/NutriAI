@@ -1,0 +1,5 @@
+body {
+    /* Remove default spacing */
+    margin: 0;
+    padding-top: var(--header-height);
+}

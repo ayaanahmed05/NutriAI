@@ -1,0 +1,24 @@
+.SecondaryButton {
+    background: transparent;
+
+    font-family: var(--font-family); /* Updated to use global font */
+    font-size: var(--font-size-base); /* Use global font size */
+    font-weight: var(--font-weight-bold); /* Use global font weight */
+    color: var(--text-color); /* Changed from white to black for visibility */
+
+    border: solid 1px var(--text-color); /* Border color updated to black */
+    border-radius: 8px; /* Assuming a default rounded button */
+
+    padding: calc(0.875rem - 1px) calc(2rem - 1px);
+
+    cursor: pointer;
+    transition: opacity 0.2s ease-in-out, background 0.3s ease-in-out;
+}
+
+.SecondaryButton:hover {
+    opacity: 0.9;
+}
+
+.SecondaryButton:active {
+    opacity: 0.75;
+}
