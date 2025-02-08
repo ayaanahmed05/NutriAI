@@ -1,6 +1,6 @@
 .navButton {
     background-color: transparent;
-    font-family: var(--font-family);
+    font-family: var(--header-font);
     font-size: 1.25rem;
     font-weight: var(--font-weight-bold);
     color: var(--text-color); /* Use text color for better visibility */

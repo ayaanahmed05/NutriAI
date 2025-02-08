@@ -13,7 +13,7 @@
 }
 
 .companyName {
-    font-family: var(--font-family);
+    font-family: var(--header-font);
     font-weight: var(--font-weight-bold);
     font-size: 1.5rem;
     color: var(--text-color);

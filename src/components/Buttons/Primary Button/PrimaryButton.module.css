@@ -1,7 +1,7 @@
 .primaryButton {
     background-color: var(--primary-color);
     
-    font-family: var(--font-family); /* Updated to use global font */
+    font-family: var(--body-font); /* Updated to use global font */
     font-size: var(--font-size-base); /* Use global font size */
     font-weight: var(--font-weight-bold); /* Use global font weight */
     color: var(--background-color); /* Ensures text is readable on green */

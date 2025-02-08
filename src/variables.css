@@ -6,12 +6,15 @@
     --text-color: #333333; /* Dark Gray for readability */
     --border-color: #d1d1d1; /* Light Gray */
     --button-hover: #1e8449; /* Darker Green on Hover */
+    --card-background: #FDFDFD;
   
     /* Typography */
-    --font-family: "Arial", sans-serif;
     --font-size-base: 16px;
     --font-weight-bold: 600;
+    --header-font: "Poppins", sans-serif;
+    --body-font: "Roboto", sans-serif;
 
-    /* Lengths */
+    /* Numbers */
     --header-height: 70px;
-  }
+    --card-radius: 24px;
+}

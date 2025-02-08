@@ -19,7 +19,7 @@
 }
 
 .contentContainer h1 {
-    font-family: var(--font-family);
+    font-family: var(--header-font);
     font-size: 3rem;
     font-weight: var(--font-weight-bold);
     letter-spacing: -1%;
@@ -29,7 +29,7 @@
 }
 
 .contentContainer p {
-    font-family: var(--font-family);
+    font-family: var(--body-font);
     font-size: 1.25rem;
     line-height: 140%;
     color: var(--text-color);
