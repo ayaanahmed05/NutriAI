@@ -6,10 +6,10 @@ import NutritionGuide from "./components/Nutrition Guide/NutritionGuide.jsx"
 function App() {
     return (
         <>
-            {/* <Header />
-            <HeroSection /> */}
+            <Header />
+            <HeroSection />
 
-            <NutritionGuide />
+            {/* <NutritionGuide /> */}
         </>
     ); 
 }
