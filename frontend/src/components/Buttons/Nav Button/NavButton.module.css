@@ -5,6 +5,7 @@
     font-weight: var(--font-weight-bold);
     color: var(--text-color); /* Use text color for better visibility */
     letter-spacing: 2%;
+    text-decoration: none;
 
     border-style: none;
     cursor: pointer;

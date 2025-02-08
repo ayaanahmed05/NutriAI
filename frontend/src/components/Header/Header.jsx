@@ -3,7 +3,13 @@ import PrimaryButton from "../Buttons/Primary Button/PrimaryButton";
 import NavButton from "../Buttons/Nav Button/NavButton";
 
 function Header() {
-    const navButtons = ["Home", "Meal Plans", "Grocery List", "Nutrition Guide"];
+    const navButtons = [
+        { label: "Home", to: "/" },
+        { label: "Meal Plans", to: "/meal-plans" },
+        { label: "Grocery List", to: "/grocery-list" },
+        { label: "Nutrition Guide", to: "/nutrition" },
+    ];
+
     const isLoggedIn = false;
 
     return (
@@ -13,13 +19,21 @@ function Header() {
             </div>
 
             <ul className={styles.navButtonsContainer}>
-                {navButtons.map((arrayItem, index) => (
+                {navButtons.map((button, index) => (
                     <li key={index}>
-                        <NavButton label={arrayItem} />
+                        <NavButton label={button.label} to={button.to} />
                     </li>
                 ))}
 
-                {isLoggedIn ? <li><p>Logged in</p></li> : <li><PrimaryButton label="Sign In" /></li>}
+                {isLoggedIn ? (
+                    <li>
+                        <p>Logged in</p>
+                    </li>
+                ) : (
+                    <li>
+                        <PrimaryButton label="Sign In" />
+                    </li>
+                )}
             </ul>
         </nav>
     );
