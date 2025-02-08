@@ -1,0 +1,47 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log*
+yarn-error.log
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Build files
+dist/
+.vite/
+.vitepress/
+.cache/
+out/
+*.log
+
+# Editor/IDE files
+.vscode/
+.idea/
+*.sublime-workspace
+
+# macOS-specific files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows-specific files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Logs & Debugging
+*.log
+*.lock
+*.swp
+*.swo
+*.swn
+
+# Git & Deployment
+.git/
+.vercel/
+.netlify/
+firebase-debug.log
