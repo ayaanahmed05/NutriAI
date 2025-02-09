@@ -1,9 +1,18 @@
 const express = require('express');
+const cors = require('cors'); // Import CORS middleware
 const mealPlanRoutes = require('./src/routes/mealPlanRoutes');
 const groceryListRoutes = require('./src/routes/groceryListRoutes');
 require('dotenv').config();
 
 const app = express();
+
+// Enable CORS for requests from the frontend
+app.use(cors({
+    origin: "http://localhost:5173", // Replace with your frontend's origin if different
+    methods: ["GET", "POST"], // Allow specific HTTP methods
+    credentials: true // Allow cookies if needed
+}));
+
 app.use(express.json());
 
 // API routes
