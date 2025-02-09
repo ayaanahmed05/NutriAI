@@ -54,7 +54,7 @@ function MealPlanForm() {
                         value={dietaryPreferences}
                         onChange={(e) => setDietaryPreferences(e.target.value)}
                         required
-                        placeholder="e.g., Low-sodium, vegetarian"
+                        placeholder="e.g., Vegan"
                     />
                 </div>
                 <div className={styles.formGroup}>
@@ -68,9 +68,11 @@ function MealPlanForm() {
                         placeholder="e.g., 2000"
                     />
                 </div>
-                <PrimaryButton
-                    label={loading ? "Generating..." : "Generate"}
-                />
+                <div className={styles.submitButtonContainer}>
+                    <PrimaryButton
+                        label={loading ? "Generating..." : "Generate"}
+                    />
+                </div>
             </form>
 
             {error && <p className={styles.errorMessage}>{error}</p>}

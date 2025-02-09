@@ -6,11 +6,8 @@ function Header() {
     const navButtons = [
         { label: "Home", to: "/" },
         { label: "Meal Plans", to: "/meal-plans" },
-        { label: "Grocery List", to: "/grocery-list" },
         { label: "Nutrition Guide", to: "/nutrition" },
     ];
-
-    const isLoggedIn = false;
 
     return (
         <nav className={styles.headerContainer} aria-label="Main Navigation">
@@ -24,16 +21,6 @@ function Header() {
                         <NavButton label={button.label} to={button.to} />
                     </li>
                 ))}
-
-                {isLoggedIn ? (
-                    <li>
-                        <p>Logged in</p>
-                    </li>
-                ) : (
-                    <li>
-                        <PrimaryButton label="Sign In" />
-                    </li>
-                )}
             </ul>
         </nav>
     );
